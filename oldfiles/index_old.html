@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script>
+var url = 'mysql_parse.php';
+var post_num = 0;
+$(document).ready(function() {
+  $.getJSON(url, function(data) {
+    $.each(data.posts, function(index, posts) {
+      $('#content').append('<div class="post_title">');
+      $('#content').append('<p class="title">Title</p>');
+      $('#content').append('<p class="date">01/01/2013</p>');
+      $('#content').append('<p style="clear: both;"></p>');
+      $('#content').append('</div>');
+      $('#content').append('<div class="post_message">Hello world!</div><br />');
+      });
+    });
+});
+</script>
+<style>
+body {
+padding-top:2%;
+}
+#content {
+width: 80%;
+margin-left: auto;
+margin-right: auto;/*
+background-color:lightgrey;
+border:2px solid grey;*/
+padding-top:10px;
+padding-bottom:10px;
+-moz-border-radius: 12px;
+border-radius: 12px;
+}
+.post_message,.post_title
+{
+border:solid 1px black;
+}
+.post_title
+{
+background-color:grey;
+padding-top:0px;
+padding-bottom:0px;
+font-size:24px;
+}
+.post_message
+{
+background-color:lightgrey;
+padding:10px;
+}
+.title,.date
+{
+padding-top:0px;
+padding-bottom:0px;
+margin-top:7px;
+margin-bottom:5px;
+}
+.title {
+padding-left:10px;
+float:left;
+line-height:70%;
+font-weight:bold;
+}
+.date {
+padding-right:10px;
+float: right;
+line-height:70%;
+}
+</style>
+</head>
+
+<body>
+<div id="content">
+
+<div class="post_title" id="post_title_">
+  <p class="title">Title</p>
+  <p class="date">01/01/2013</p>
+  <p style="clear: both;"></p>
+</div>
+<div class="post_message" id="post_message_">Hello world!</div>
+<br />
+<div class="post_title" id="post_title_">
+  <p class="title">Title</p>
+  <p class="date">01/01/2013</p>
+  <p style="clear: both;"></p>
+</div>
+<div class="post_message" id="post_message_">Hello world!</div>
+<br />
+
+</div>
+</div>
+</body>
+</html>

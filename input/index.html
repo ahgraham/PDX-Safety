@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Police App</title>
+    <link rel="icon" href="img/poliappfavicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <div id="menuHolder"></div>
+
+    <div id="dContent"></div>
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/universalscript.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.get("layouts/menuBar.html", function(data) {
+                $("#menuHolder").html(data);
+                $("#homeMenuButton").addClass("active");
+            });
+        });
+    </script>
+</body>
+</html> 

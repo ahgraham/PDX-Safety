@@ -1,0 +1,30 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="nav brandLink" href="index.html"><img class='brandIcon' src='img/logo.png'></a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li id="homeMenuButton"><a class="menuButton" href="index.html">Home</a></li>
+                    <li class="divider-vertical"></li>
+                    <li id="boloMenuButton"><a class="menuButton" href="bolo.html">BOLO's</a></li>
+                    <li class="divider-vertical"></li>
+                    <li id="helpMenuButton"><a class="menuButton" href="helpText.html">Help</a></li>
+                    <li class="divider-vertical"></li>
+                    <li id="profileMenuButton"><a class="menuButton" href="profile.html">My Profile</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a class="menuButton" href="#" id='survey' onClick='loadSurvey()'> Give Feedback </a></li>
+                </ul>
+                <ul class="nav pull-right">
+                    <li><a class="menuButton" id="logout" href="#" onClick="logout()">Logout</a><li>
+                </ul>
+                <p class="navbar-text pull-right" id="loggedInAs"></p>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+{
+"curly" : true,
+"eqeqeq" : true,
+"strict" : false,
+"trailing" : true,
+"shadow" : true,
+"multistr" : true,
+"indent" : 4,
+"maxerr" : 20,
+"white" : false,
+"passfail" : false,
+"onevar" : true,
+
+"predef" : [ ],
+
+"browser" : true,
+"devel" : true,
+"node" : false,
+"jquery" : false
+}
